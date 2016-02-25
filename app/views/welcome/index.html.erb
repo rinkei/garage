@@ -3,6 +3,11 @@
   The time is now: <%= Time.now %>
 </p>
 
+<form>
+  <label>Say something:</label><br>
+  <input type="text" data-behavior="room_speaker">
+</form>
+
 <div id="messages">
   <%= render @messages %>
 </div>
