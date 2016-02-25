@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @messages = Message.all
+    @messages = Message.order(id: :desc)
   end
 end
